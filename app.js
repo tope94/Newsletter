@@ -58,7 +58,7 @@ res.sendFile(__dirname + "/success.html")
   app.post("/failure", function(req, res){
     res.redirect("/")
   })
-  // request.write(jsonDATA);
+  request.write(jsonDATA);
   request.end();
 
 
