@@ -11,6 +11,10 @@ app.get("/",function(req,res){
   res.sendFile(__dirname + "/signup.html")
 })
 
+app.get('/health',function(req,res){
+  res.status('200').send("200 -ok")
+});
+
 app.post("/", function(req,res){
   const firstname = req.body.fn;
   const lastname = req.body.ln;
